@@ -9,7 +9,7 @@ As as user I want to search easily for movies to watch
 I want to be able to easily and quickly view trailers for these movies so that I can easily choose if I want to watch any of these movies or instead create a new search
 To do this I want to be able to search for past movies that I have enjoyed, or select inputs to present certain types of movies
 
-# Wireframe
+# Draft Design
 
 # APIs:
 OMBD
