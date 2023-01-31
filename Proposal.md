@@ -11,7 +11,7 @@ The page will load with a selection of inputs for the user to narrow down the ty
 
 # Draft Design
 
-<img src="./images/MovieApp_Home.png">
+<img src="./Images/MovieApp_Home.png">
 
 # APIs:
 - OMBD
