@@ -18,6 +18,10 @@ The page will load with a selection of inputs for the user to narrow down the ty
 - Youtube
 
 # Rough breakdown of tasks: 
-- Website design
+- Webpage design
 - OMBD API ajax
 - Youtube API ajax
+- Generate user inputs
+- On user click or movie choice, generate multiple movie cards with movie info and movie trailer 
+- based on api call from omdb and youtube.
+- Generate buttons from past searches.
