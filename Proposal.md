@@ -18,6 +18,6 @@ The page will load with a selection of inputs for the user to narrow down the ty
 - Youtube
 
 # Rough breakdown of tasks: 
-Website design
-OMBD API ajax
-Youtube API ajax
+- Website design
+- OMBD API ajax
+- Youtube API ajax
