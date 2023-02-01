@@ -4,12 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="test">
-      <h2>CSS Test</h2>
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="#">Search</a></li>
+      <li role="presentation"><a href="#">Project</a></li>
+      <li role="presentation"><a href="#">API's</a></li>
+    </ul>
+   
+     <div class="jumbotron">
+      <h1>Find your Movie!</h1>
+      <p class="search-thru"></p>Search through our database to find your film</p>
+     
+      <input class="search-input film-search" id="search-input" placeholder="Type"/>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Search</a></p>
+
+
+     <img id="background" src="./Images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg">
+
+    <div class="card">
+      <img src="./Images/MovieApp_Home.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Film title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
