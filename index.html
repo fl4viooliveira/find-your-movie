@@ -9,36 +9,74 @@
     <title>Document</title>
   </head>
   <body>
-    <ul class="nav nav-tabs">
-      <li role="presentation" class="active"><a href="#">Search</a></li>
-      <li role="presentation"><a href="#">Project</a></li>
-      <li role="presentation"><a href="#">API's</a></li>
+<!-- navbar -->
+
+<div id="main-container">
+   
+      <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="#section1">Search</a></li>
+      <li role="presentation"><a href="#section2">Films</a></li>
+      <li role="presentation"><a href="#section3">Trailers</a></li>
     </ul>
    
-   <div class="jumbotron">
+    <!-- jumbotron -->
+    <section id="section1">
+    <div class="jumbotron">
     <h1>Find your Movie!</h1>
-    <p class="search-thru"></p>Search through our database to find your film</p>
-   
-    <input class="search-input film-search" id="search-input" placeholder="Type"/>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Search</a></p>
-
-   
+    <div class="image-container">
+      <div class="text-block">
+        <!-- Hover #1 -->
+<div class="box-1">
+  <div class="btn btn-one">
+  
+  
+  
+    <span>SEARCH</span>
+  </div>
+</div>
+ 
     
-    
-
-   <img id="background" src="./Images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg">
+   <input class="search-input film-search" id="search-input" placeholder="Type"/></div>
+      <img src="./Images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg" alt="Cinema" style="width:100%;">
+     </div>
+     </div>
+     </div>
+    </div>
+  </div>
+     </section>
+  
+   
+   
+    <section  id="section2" class="searched-items">
+   <!-- this should be created dinamically -->
+    <!-- renders the film cards -->
     <div class="card">
-    <img src="./Images/MovieApp_Home.png" class="card-img-top" alt="...">
+    <img src="./Images/blade_runner.jpg" class="card-img-top" alt="film poster">
     <div class="card-body">
-    <h5 class="card-title">Film title</h5>
-    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <h2 class="card-title">Film Title</h2>
+    <h2 class="card-text">Actors</h2>
+    <h2 class="card-text">Rating</h2>
+    <h3 class="card-text"><small class="text-muted">Oscars and prizes</small></h3>
+    <p class="card-description">Film description goes here</p>
     </div>
     </div>
+  
+      <!-- this should be created dinamically -->
+      <!-- renders the film cards -->
+         <div class="card">
+         <img src="./Images/total recall.jpg" class="card-img-top" alt="film poster">
+         <div class="card-body">
+         <h2 class="card-title">Film Title</h2>
+         <h3 class="card-text">Actors</h3>
+         <h3 class="card-text">Rating</h3>
+         <h3 class="card-text"><small class="text-muted">Oscars and prizes</small></h3>
+         <p class="card-description">Film description goes here</p>
+         </div>
+         </div>
+         </section>
 
+        </div>
 
-
-     
 
 
     <!-- <script src="./assets/js/keys.js"></script> -->
