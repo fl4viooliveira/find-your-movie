@@ -24,7 +24,7 @@ $.ajax({
         for (let i = 0; i < 5; i++) {
             // console.log("loop is working")
             var thisArray = array.results[i];
-            var card = $('<div>').addClass("card m-3 p-2");
+            var card = $('<div>').addClass("card m-3 p-2 col-sm-2");
             // console.log(thisArray);
 
             // Get the album cover
