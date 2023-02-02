@@ -7,7 +7,15 @@
 
 console.log("Hello World")
 
-var movieQueryURL = "https://itunes.apple.com/search?&entity=album&term=star+wars&limit=5"
+// pull input from website
+// var movie = $("#movie-input").val();
+var movie = "Harry Potter"
+var movieArr = movie.split(' ');
+console.log(movieArr);
+var movieURLInput = movieArr.join('+');
+console.log(movieURLInput);
+
+var movieQueryURL = "https://itunes.apple.com/search?&entity=album&term=" + movieURLInput + "&limit=5";
 
 $.ajax({
     url: movieQueryURL,
@@ -15,7 +23,7 @@ $.ajax({
 })
     .then(function (response) {
         var array = JSON.parse(response)
-        // console.log(array)
+        console.log(array)
         for (let i = 0; i < 5; i++) {
             // console.log("loop is working")
             var thisArray = array.results[i];
