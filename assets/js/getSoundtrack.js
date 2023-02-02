@@ -1,15 +1,12 @@
-// get name input from film search API
-
-// Use this to return search of albums on offer
-
-// show albums listed
-// how many??
-
 console.log("Hello World")
 
 // pull input from website
-// var movie = $("#movie-input").val();
+// var movie = $("#???????").val();
+
+// Line below to test
 var movie = "Harry Potter"
+
+// Keep below!!!
 var movieArr = movie.split(' ');
 console.log(movieArr);
 var movieURLInput = movieArr.join('+');
@@ -23,7 +20,7 @@ $.ajax({
 })
     .then(function (response) {
         var array = JSON.parse(response)
-        console.log(array)
+        // console.log(array)
         for (let i = 0; i < 5; i++) {
             // console.log("loop is working")
             var thisArray = array.results[i];
