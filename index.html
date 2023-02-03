@@ -13,7 +13,31 @@
 
 <!-- Below is for me to text my cards -->
 <body>
-  <div class="container">
+  <div class="container-fluid" style="max-width: 1600px">
+    <div class="row mt-3">
+      <div class="col-lg-3 col-md-6 col-sm-12 pb-3 m-2">
+        <div class="border border-dark rounded" style="padding-left: 10px">
+        <h2 id="form-heading" class="mt-1 h3 form-label pt-3">
+          Search for a movie:
+        </h2>
+        <form id="search-form" class="form">
+          <div class="form-inline form-group">
+            <div class="input-group">
+              <input class="form-input weather-search" type="text" id="movie-input" placeholder="Enter city here"
+                aria-labelledby="form-heading" aria-controls="today forecast" />
+              <div class="input-group-append">
+                <button type="submit" class="btn search-button bg-info btn-block" id="search-button" aria-label="submit search">
+                  Search
+                </button>
+                </div>
+                <hr class="hr weather-hr" />
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="list-group" id="history"></div>
+      </div>
+  <div class="container-fluid">
     <div class="row justify-content-between" id="music-input">
     </div>
   </div>
@@ -29,8 +53,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./assets/js/keys.js"></script>
-  <script src="./assets/js/script.js"></script>
   <script src="./assets/js/getSoundtrack.js"></script>
 </body>
 
