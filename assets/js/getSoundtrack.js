@@ -1,13 +1,14 @@
 // CODE FOR CLICK LISTENER!!!!!!!
 
-$("#search-button-new").on("click", function (event) {
+// $("#search-button-new").on("click", function (event) {
 
-    event.preventDefault();
+    // event.preventDefault();
     console.log("Hello World");
 
     // pull input from website
 
-    var movie = $("#search-input").val();
+    // var movie = $("#search-input").val();
+    var movie = 'Avatar' 
 
 
     // Line below to test
@@ -63,4 +64,4 @@ $("#search-button-new").on("click", function (event) {
                 $("#music-input").append(card.append(albumTitle, albumIcon, artistName, numOfTracks, linkToAlbum))
             }
         })
-})
+// })
