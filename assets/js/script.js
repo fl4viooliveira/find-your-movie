@@ -1,4 +1,5 @@
 // OMDb api call
+
 $(document).ready(function () {
 
   // search button click

@@ -1,12 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;  
   border: 0px;
+  text-align: center;
 }
-
 
 li {
   margin: 30px;
   justify-content: space-between;
+  
 }
 
 a {
@@ -16,9 +23,13 @@ a {
 a:hover {
   color: white;
 }
+
+.nav {
+  margin-bottom: -5px;
+}
 .nav-tabs { 
   margin-top: 0%;
-  background-color: rgb(142, 0, 0);
+  background: linear-gradient(180deg, #383838, #000000);
    font-size: 20px;
    color: rgb(255, 255, 255);
 }
@@ -30,12 +41,10 @@ ul {display: inline;
 
 .jumbotron {
   background-color: black;
+ 
 
-  
 }
 
-/*
- .btn { 
 background-color: black;
 display: flex;
 justify-content: center;
@@ -44,6 +53,7 @@ padding: 10px;
 width: 100%;
 align-content: center; 
 margin-top: 20px;
+font-size: 25px;
 }
 */
 
@@ -54,7 +64,7 @@ h1 {
   justify-content: center;
   color: white;
   background-color: black;
-  font-size: 60px;
+  font-size: 70px;
   font-family: "Montserrat";
 }
 
@@ -75,38 +85,12 @@ h1 {
 
 }
 
-.card-img-top {
-width: 30%;
-height: 30%;
-}
 
-.card-title {
-  font-size:50px;
-
-}
-
-/* Container holding the image and the text */
-.container {
-  position: relative;
-}
-
-/* Bottom right text */
-.text-block {
-
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  
-}
 
 .btn-lrg {
   border-radius: 10px;
   margin: 20px;
-  width: 50%;
+  width: 100%;
 }
 
 .btn-primary {
@@ -129,12 +113,6 @@ height: 30%;
   background-color: rgb(255, 255, 255);
   color: rgb(114, 114, 114);
 }
-.card {
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  flex-direction: row;
-}
 
 
 div[class*=box] {
@@ -143,8 +121,6 @@ div[class*=box] {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
-
 
 .box-1 { background-color: #000000; }
 .btn {
@@ -203,3 +179,35 @@ div[class*=box] {
   opacity: 0; 
   transform: scale(0.1, 1);
 }
+
+#section2 {
+  background-color: black;
+}
+
+.card {
+  margin-top: -40px;
+  margin-left: 40px;
+  background-color: black;
+  color: white;
+  padding-left: 40px;
+  flex-direction: row;
+  text-align: left;
+ 
+
+}
+
+.card-img-top {
+  margin: 20px;
+  width: 35%;
+  height: 35%;
+
+  }
+
+.card-title {
+  font-size:50px;
+ }
+
+.video-here {
+  background-color: aqua;
+}
+
