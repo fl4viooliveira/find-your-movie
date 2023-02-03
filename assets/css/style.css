@@ -34,7 +34,8 @@ ul {display: inline;
   
 }
 
-.btn {
+/*
+ .btn { 
 background-color: black;
 display: flex;
 justify-content: center;
@@ -44,6 +45,7 @@ width: 100%;
 align-content: center; 
 margin-top: 20px;
 }
+*/
 
 
 h1 {
@@ -134,13 +136,15 @@ height: 30%;
   flex-direction: row;
 }
 
+
 div[class*=box] {
   height: 33.33%;
   width: 100%; 
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} 
+
 
 .box-1 { background-color: #000000; }
 .btn {
