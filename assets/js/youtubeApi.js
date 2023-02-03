@@ -1,17 +1,17 @@
 
 // YouTube Integration Test ---------------------------------------------
-var youtube = $("#youtube");
-youtube.attr("class", "container m-3");
-var h2 = $("<h2>");
-h2.text("Add a movie name to test:");
-
-var button = $('<button class="btn btn-primary m-3">Search</button>');
-
-var input = $("<input>");
-input.attr("id", "search");
-youtube.append(h2);
-youtube.append(input);
-youtube.append(button);
+var youtube = $("#section2");
+// youtube.attr("class", "container m-3");
+// var h2 = $("<h2>");
+// h2.text("Add a movie name to test:");
+//
+// var button = $('<button class="btn btn-primary m-3">Search</button>');
+//
+// var input = $("<input>");
+// input.attr("id", "search");
+// youtube.append(h2);
+// youtube.append(input);
+// youtube.append(button);
 
 function movieCall(inp) {
   $.ajax({
@@ -39,7 +39,7 @@ function movieCall(inp) {
     youtube.append(iframe);
   });
 }
-  movieCall("Avatar");
+  movieCall("Blade Runner 2045 Official Trailer");
 
 // button.on("click", function (event) {
 //   event.preventDefault();

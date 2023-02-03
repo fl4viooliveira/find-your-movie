@@ -1,10 +1,14 @@
 // CODE FOR CLICK LISTENER!!!!!!!
+
 $("#search-button-new").on("click", function (event) {
+
     event.preventDefault();
     console.log("Hello World");
 
     // pull input from website
+
     var movie = $("#search-input").val();
+
 
     // Line below to test
     // var movie = "Harry Potter"
