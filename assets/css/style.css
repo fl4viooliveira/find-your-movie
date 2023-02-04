@@ -200,3 +200,19 @@ div[class*=box] {
   aspect-ratio: 16 / 9;
   width: 100%;
 }
+
+#footer-info{
+  border-top: 1px solid white;
+  margin: 0;
+  justify-content: space-evenly;
+  margin: 0 auto;
+
+}
+.album-name{
+  width: 150px;
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
