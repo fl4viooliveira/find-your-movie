@@ -1,4 +1,4 @@
-var section = $('#section2')
+var section = $("#section2");
 var getInput = $("#search-input");
 var inputBtn = $("#btn-search");
 
@@ -6,43 +6,41 @@ function movieSearch(inp) {
   $.ajax({
     url: `https://www.omdbapi.com/?t=${inp}&apikey=556cb440`,
     method: "GET",
-    success: function(movieInfo) {
+    success: function (movieInfo) {
       console.log(movieInfo);
 
-      var row = $('<div class="row" >')
-      var carCol = $('<div class="card md-3 col-6">')
-      row.append(carCol)
-      var rowG = $('<div class="row g-0">')
-      carCol.append(rowG)
-      var colMd4 = $('<div class="col-md-4">')
-      rowG.append(colMd4)
-      var imgMovie = $(`<img src=${movieInfo.Poster} class="img-fluid rounded-start" alt=${movieInfo.Title}>`)
-      colMd4.append(imgMovie)
-      var colMd8 = $('<div class="col-md-8">')
-      rowG.append(colMd8)
-      var cardBody = $('<div class="card-body">')
-      colMd8.append(cardBody)
-      var title = $(`<h6 class="card-title">${movieInfo.Title} <small class="text-muted">(${movieInfo.Year})</small></h6>`)
-      cardBody.append(title)
-      var genre = $(`<p class="card-text">- ${movieInfo.Genre}</p>`)
-      cardBody.append(genre)
-      var overview = $(`<p class="card-text">${movieInfo.Plot}</p>`)
-      cardBody.append(overview)
+      // Movie Poster
+      var imgAnchor = $("#img-anchor");
+      var imgMovie = $(
+        `<img src=${movieInfo.Poster} class="card-img rounded-start" alt=${movieInfo.Title}>`
+      );
+      imgAnchor.append(imgMovie);
 
+      // Movie Info
+      var headerInfo = $("#header-info")
+      var title = $(
+        `<h2 class="text-center">${movieInfo.Title} <small class="text-muted">(${movieInfo.Year})</small></h2>`
+      );
+      headerInfo.append(title)
 
+      var infoAnchor = $("#info-anchor");
+      var genre = $(`<p class="card-text"><b>Genre:</b> ${movieInfo.Genre}</p>`)
+      var actors = $(`<p class="card-text"><b>Actors:</b> ${movieInfo.Actors}</p>`)
+      var director = $(`<p class="card-text"><b>Director:</b> ${movieInfo.Director}</p>`)
+      var writer = $(`<p class="card-text"><b>Writer:</b> ${movieInfo.Writer}</p>`)
+      var overview = $(`<p class="card-text"><b>Overview:</b> ${movieInfo.Plot}</p>`)
+      var awards = $(`<p class="card-text"><b>Awards:</b> ${movieInfo.Awards}</p>`)
 
-      
-      section.append(row)
+      infoAnchor.append(genre, actors, director, writer, overview, awards);
 
     },
   });
 }
 
-inputBtn.on("click", function(event) {
+inputBtn.on("click", function (event) {
   event.preventDefault();
   var movie = getInput.val();
 
-  movieSearch(movie)
-
+  movieSearch(movie);
 });
-  movieSearch("Avatar")
+movieSearch("Avatar");
