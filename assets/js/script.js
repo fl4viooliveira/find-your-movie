@@ -24,8 +24,7 @@ function searchMovie(movieTitle) {
       if (movieInfo.Response === "True") {
         
 
-        console.log(movieInfo);
-        // create movie container
+         // create movie container
         var movieContainer = $("<div>").addClass("card");
 
         var moviePoster = $("<img>").attr("src", movieInfo.Poster).addClass("card-img-top");
