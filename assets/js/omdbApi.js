@@ -9,6 +9,10 @@ function movieSearch(inp) {
     success: function (movieInfo) {
       console.log(movieInfo);
 
+      var section = $('#movie-info')
+      // section.attr(`data-movie-title = ${movieInfo.Title}`)
+      section.attr("data-movie", movieInfo.Title)
+
       // Movie Poster
       var imgAnchor = $("#img-anchor");
       var imgMovie = $(
@@ -33,6 +37,7 @@ function movieSearch(inp) {
 
       infoAnchor.append(genre, actors, director, writer, overview, awards);
 
+console.log($('#movie-info').dataset.movie)
     },
   });
 }
@@ -44,3 +49,4 @@ inputBtn.on("click", function (event) {
   movieSearch(movie);
 });
 movieSearch("Avatar");
+

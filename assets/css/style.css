@@ -194,3 +194,9 @@ div[class*=box] {
 .btn-soundtrack {
   background-color: #000000;
 }
+
+/* Resonsive Youtube Iframe */
+.video{
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
