@@ -15,7 +15,7 @@ var youtube = $("#section2");
 
 function movieCall(inp) {
   $.ajax({
-    url: `${YOUTUBE_URL}5&q=${inp}&key=${YOUTUBE_KEY_2}`,
+    url: `${YOUTUBE_URL}5&q=${inp}&key=${YOUTUBE_KEY}`,
     method: "GET",
   }).then(function (response) {
     console.log(response);
