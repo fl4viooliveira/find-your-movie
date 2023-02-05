@@ -55,7 +55,7 @@ function soundTrack(inp) {
 // YOUTUBE API BLOCK --------------------------------------
 function trailerCall(inp) {
   $.ajax({
-    url: `${YOUTUBE_URL}5&q=${inp}&key=${YOUTUBE_KEY_2}`,
+    url: `${YOUTUBE_URL}5&q=${inp}&key=${YOUTUBE_KEY_3}`,
     method: "GET",
   }).then(function (response) {
     console.log(response);
@@ -139,7 +139,8 @@ function movieSearch(inp) {
       infoAnchor.append(genre, actors, director, writer, overview, awards);
 
       trailerCall(`${movieInfo.Title} ${movieInfo.Year} official trailer`);
-      soundTrack(movieInfo.Title);
+      // soundTrack(movieInfo.Title);
+      soundTrack(`${movieInfo.Title}`);
     },
   });
   // NEW SEARCH BUTTON BLOCK --------------------------------------
@@ -158,5 +159,5 @@ inputBtn.on("click", function (event) {
   $(".jumbotron").attr("style", "display: none !important;");
   movieSearch(movie);
 });
-movieSearch("Harry Potter");
+// movieSearch("Harry Potter");
 // SEARCH BUTTON BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
