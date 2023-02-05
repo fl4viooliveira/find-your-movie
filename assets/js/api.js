@@ -11,8 +11,10 @@ function soundTrack(inp) {
     movieURLInput +
     "&limit=5";
   var footer = $("#footer-info");
-  footer.attr('class', 'card-footer d-flex border-top')
+  footer.attr('class', 'card-footer d-flex')
 
+  var sondTrack = $('<span class="badge rounded-pill text-bg-info my-3">Movie Sound Tracks</span>')
+  $('#sound-track').prepend(sondTrack)
 
   $.ajax({
     url: movieQueryURL,
