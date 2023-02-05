@@ -11,6 +11,8 @@ function soundTrack(inp) {
     movieURLInput +
     "&limit=5";
   var footer = $("#footer-info");
+  footer.attr('class', 'card-footer d-flex border-top')
+
 
   $.ajax({
     url: movieQueryURL,
@@ -34,11 +36,9 @@ function soundTrack(inp) {
 
       // Get the link to the album
       var albumURL = thisArray.collectionViewUrl;
-      var linkToAlbum = $("<p>").text("Link to ITunes album: " + albumURL);
 
       var anchor = $(`<a href=${albumURL} target="_blank">`);
       anchor.append(albumIcon, albumTitle);
-
 
       // $("#music-input").append(card.append(albumTitle, albumIcon, artistName, numOfTracks, linkToAlbum))
       // footer.append(card.append(albumTitle, anchor));
@@ -81,6 +81,13 @@ function trailerCall(inp) {
 
 // OMBd API BLOCK ------------------------------------------
 function movieSearch(inp) {
+  var newSearchBlock = $('<div class="container-fluid bg-black">');
+  var newSearchBtn = $(
+    '<button id="new-search" class="btn btn-outline-info p-0 my-2">New Search</button>'
+  );
+  newSearchBlock.append(newSearchBtn);
+  $("#movie-info").prepend(newSearchBlock);
+
   $.ajax({
     url: `https://www.omdbapi.com/?t=${inp}&apikey=556cb440`,
     method: "GET",
@@ -127,6 +134,11 @@ function movieSearch(inp) {
       soundTrack(movieInfo.Title);
     },
   });
+  // NEW SEARCH BUTTON BLOCK --------------------------------------
+  $("#new-search").on("click", function () {
+    location.reload();
+  });
+  // NEW SEARCH BUTTON BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 }
 // OMBd API BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -135,10 +147,8 @@ inputBtn.on("click", function (event) {
   event.preventDefault();
   var movie = getInput.val();
 
-  $('.jumbotron').attr("style", "display: none !important;")
+  $(".jumbotron").attr("style", "display: none !important;");
   movieSearch(movie);
-  
 });
-
 // movieSearch("Harry Potter");
 // SEARCH BUTTON BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -202,7 +202,7 @@ div[class*=box] {
 }
 
 #footer-info{
-  border-top: 1px solid white;
+  /* border-top: 1px solid white; */
   margin: 0;
   justify-content: space-evenly;
   margin: 0 auto;
