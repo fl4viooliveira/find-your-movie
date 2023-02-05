@@ -76,6 +76,9 @@ function trailerCall(inp) {
       </iframe>
       `);
 
+
+  var trailerPill = $('<span class="badge rounded-pill text-bg-info my-3">Watch the Trailer</span>')
+  $("#trailer-column").prepend(trailerPill)
     $("#trailer").append(iframe);
   });
 }
@@ -152,5 +155,5 @@ inputBtn.on("click", function (event) {
   $(".jumbotron").attr("style", "display: none !important;");
   movieSearch(movie);
 });
-// movieSearch("Harry Potter");
+movieSearch("Harry Potter");
 // SEARCH BUTTON BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
