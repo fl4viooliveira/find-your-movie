@@ -11,10 +11,12 @@ function soundTrack(inp) {
     movieURLInput +
     "&limit=5";
   var footer = $("#footer-info");
-  footer.attr('class', 'card-footer d-flex')
+  footer.attr("class", "card-footer d-flex flex-wrap");
 
-  var sondTrack = $('<span class="badge rounded-pill text-bg-info my-3">Movie Sound Tracks</span>')
-  $('#sound-track').prepend(sondTrack)
+  var sondTrack = $(
+    '<span class="badge rounded-pill text-bg-info my-3">Movie Sound Tracks</span>'
+  );
+  $("#sound-track").prepend(sondTrack);
 
   $.ajax({
     url: movieQueryURL,
@@ -76,9 +78,10 @@ function trailerCall(inp) {
       </iframe>
       `);
 
-
-  var trailerPill = $('<span class="badge rounded-pill text-bg-info my-3">Watch the Trailer</span>')
-  $("#trailer-column").prepend(trailerPill)
+    var trailerPill = $(
+      '<span class="badge rounded-pill text-bg-info my-3">Watch the Trailer</span>'
+    );
+    $("#trailer-column").prepend(trailerPill);
     $("#trailer").append(iframe);
   });
 }
