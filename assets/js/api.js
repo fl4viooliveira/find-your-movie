@@ -135,7 +135,9 @@ inputBtn.on("click", function (event) {
   event.preventDefault();
   var movie = getInput.val();
 
+  $('.jumbotron').attr("style", "display: none !important;")
   movieSearch(movie);
+  
 });
 
 // movieSearch("Harry Potter");
