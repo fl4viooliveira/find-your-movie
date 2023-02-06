@@ -13,6 +13,33 @@
   <body>
     <!-- navbar -->
 
+<div id="main-container">
+     <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="#section1">Search</a></li>
+      <li role="presentation"><a href="#section2">Films</a></li>
+      <li role="presentation"><a href="#section3">Soundtracks</a></li>
+    </ul> -->
+   <!-- jumbotron -->
+    <div class="jumbotron">
+      <h1>Find your Movie!</h1>
+      <div class="image-container">
+        <div class="text-block">
+     <!--  -->
+  <div class="box-1">
+    <div class="btn btn-one">
+      <section id="section1">
+      <span>SEARCH</span><a href="#section1"></a>
+      </div>
+    </div>
+  </div>
+ 
+    <!-- search input box -->
+   <input class="search-input film-search" id="search-input" placeholder="Type"/></div>
+      <img class ="main-image" src="./Images/Cinema.png">
+      <p class="title-2">Get your popcorn ready!</p>
+     </div>
+     </div>
+     </div>
     <div id="main-container">
 
       <ul class="nav nav-tabs">
@@ -42,47 +69,63 @@
         </div>
     </div>
     </div>
-    </div>
-    </section>
-    <section id="section2" class="searched-items">
-      <!-- this should be created dinamically -->
-      <!-- renders the film cards -->
-      <div class="card">
-        <img src="./Images/blade_runner.jpg" class="card-img-top" alt="film poster">
+  </div>
+     </section>
 
-        <div class="card-body">
-          <h1 class="card-title">Film Title</h1>
-          <h2 class="card-text">Actors</h2>
-          <h2 class="card-text">Rating</h2>
-          <h3 class="card-text"><small class="text-muted">Oscars and prizes</small></h3>
-          <p class="card-description">Film description goes here</p>
+
+
+    <section  id="section2" class="searched-items">
+      <a href="#section2">Films</a>
+   <!-- this should be created dinamically -->
+    <!-- renders the film cards -->
+    <div id="film-1" class="card">
+    <img src="./Images/blade_runner.jpg" class="card-img-top" alt="film poster">
+    
+    <div class="card-body">
+      <div class="opacity-card">
+    <h2 class="card-title">Blade Runner</h2>
+    <h2 class="card-text">Ryan Gosling - Harrison Ford</h2>
+    <h3 class="card-text">4.8 imdb</h3>
+    <h4 class="card-text">3 Oscar Nominations</h4>
+    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed, optio delectus laborum autem nobis iusto architecto, qui amet cum similique deserunt quaerat velit perspiciatis! Ipsa obcaecati temporibus itaque natus?
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus magni repellendus earum obcaecati, repellat facere minus aliquid. Repudiandae quis magnam quo ratione temporibus autem, voluptates delectus cumque consectetur, sequi debitis.
+    </p>
+    <span class="video-here"><iframe src="http://www.youtube.com/watch?v=gCcx85zbxz4" frameborder="0" ></iframe></span>
+    </div>
+    </div>
+    </div>
+  
+      <!-- this to be created dinamically -->
+      <!-- renders the film cards -->
+       </section>
+        </div>
         </div>
 
-      </div>
+       <section class="section-3">
+        <div id="soundtrack-container" class="row">
+          <div class="col-lg-12">
+            <div class="thumbnail">
+              <img id="soundtrack-img" src="./Images/blade_runner.jpg" alt="film poster">
+              <div class="caption">
+               <h3>Blade Runner Soundtrack</h3>
+               <p>Listen on ITunes</p>
+               <p><a href="#" class="btn-soundtrack" role="button">Listen Now!</a></p>
+             </div>
+            </div>
+          </div>
 
-      <!-- this should be created dinamically -->
-      <!-- renders the film cards -->
-      <div class="card">
-        <img src="./Images/total recall.jpg" class="card-img-top" alt="film poster">
-        <div class="card-body">
-          <h2 class="card-title">Film Title</h2>
-          <h3 class="card-text">Actors</h3>
-          <h3 class="card-text">Rating</h3>
-          <h3 class="card-text"><small class="text-muted">Oscars and prizes</small></h3>
-          <p class="card-description">Film description goes here</p>
-        </div>
-      </div>
     </section>
 
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="./keys.js"></script>  -->
-    <script src="https://apis.google.com/js/api.js"></script>
-
-    <script src="./assets/js/script.js"></script>
+    <section class="section-api">
+      <div id = "api-section" class = ""></div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./tempKeys.js"></script>
+<script src="./assets/js/script.js"></script>
+    <script src="./assets/js/youtubeApi.js"></script>
   </body>
 
 </html>

@@ -6,6 +6,12 @@ body {
   margin: 0px;
   border: 0px;
   text-align: center;
+  background-color: #000000;
+}
+
+ ul {display: inline;
+  justify-content: center;  
+  align-items: center;
 }
 li {
   margin: 30px;
@@ -69,9 +75,10 @@ h1 {
 }
 #search-input {
   margin: 25px;
+  margin-top: 40px;
   align-items: center;
   justify-content: center;
-  color: rgb(246, 13, 13);
+  color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   font-size: 25px;
   font-family: "Montserrat";
@@ -170,7 +177,7 @@ div[class*="box"] {
 }
 .card {
   margin-top: -40px;
-  margin-left: 40px;
+  margin-left: 0px;
   background-color: black;
   color: white;
   padding-left: 40px;
@@ -178,6 +185,7 @@ div[class*="box"] {
   text-align: left;
 }
 .card-img-top {
+  border-radius: 15px;
   margin: 20px;
   width: 35%;
   height: 35%;
