@@ -1,48 +1,64 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
-  margin: 0px;
+  margin: 0px;  
   border: 0px;
   text-align: center;
+  background-color: #000000;
+}
+
+#sub-framme-error-details {
+  display: none;;
+}
+ ul {display: inline;
+  justify-content: center;  
+  align-items: center;
 }
 li {
   margin: 30px;
   justify-content: space-between;
-}
+  }
+
 a {
   color: white;
 }
+
 a:hover {
   color: white;
-}
+} */
+
 .nav {
   margin-bottom: -5px;
-}
-.nav-tabs {
+} */
+ .nav-tabs { 
   margin-top: 0%;
   background: linear-gradient(180deg, #383838, #000000);
    font-size: 20px;
    color: rgb(255, 255, 255);
-}
-ul {display: inline;
-  justify-content: center;
-  align-items: center;
-}
+} 
+
+
 .jumbotron {
   background-color: black;
-}
+ }
+
 .main-image {
   width: 100%;
   height: 50%;
   opacity: 50%;
   }
+
  .title-2 {
-  font-size: 100px;
+  font-size: 70px;
   color: white;
   font-family:"Montserrat";
- }
+ } 
+
+
  .btn-one {
 background-color: black;
 display: flex;
@@ -50,10 +66,11 @@ justify-content: center;
 align-items: center;
 padding: 10px;
 width: 100%;
-align-content: center;
-margin-top: 20px;
+align-content: center; 
+margin-top: 40px;
 font-size: 25px;
 }
+
 h1 {
   display: flex ;
   align-items: center;
@@ -63,24 +80,29 @@ h1 {
   font-size: 70px;
   font-family: "Montserrat";
 }
+
 .search-form{
   background-color: black;
+  
 }
 #search-input {
   margin: 25px;
+  margin-top: 40px;
   align-items: center;
   justify-content: center;
-  color: rgb(246, 13, 13);
+  color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   font-size: 25px;
   font-family: "Montserrat";
   border-radius: 10px;
-}
+  }
+
 .btn-lrg {
   border-radius: 10px;
   margin: 20px;
   width: 100%;
 }
+
 .btn-primary {
   border-color: white;
 }
@@ -89,31 +111,37 @@ h1 {
   color: white;
   border-color: white;
 }
-.btn-primary:active {
+
+.btn-soundtrack:active {
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
   color: white;
   border-color: rgb(142, 0, 0);
 }
-.btn-primary:active:hover {
+
+.btn-one:active:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(114, 114, 114);
 }
+
 div[class*=box] {
   height: 33.33%;
-  width: 100%;
+  width: 100%; 
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
+
 .box-1 { background-color: #000000; }
-.btn {
+.btn-one {
   line-height: 50px;
   height: 50px;
   text-align: center;
   width: 250px;
   cursor: pointer;
 }
+
 .btn-one {
   color: #FFF;
   transition: all 0.3s;
@@ -144,8 +172,8 @@ div[class*=box] {
   letter-spacing: 2px;
 }
 .btn-one:hover::before {
-  opacity: 1;
-  transform: scale(1, 1);
+  opacity: 1; 
+  transform: scale(1, 1); 
 }
 .btn-one::after {
   content: '';
@@ -159,38 +187,81 @@ div[class*=box] {
   background-color: rgba(0, 0, 0, 0.303);
 }
 .btn-one:hover::after {
-  opacity: 0;
+  opacity: 0; 
   transform: scale(0.1, 1);
 }
+
 #section2 {
   background-color: black;
 }
+
 .card {
   margin-top: -40px;
-  margin-left: 40px;
+  margin-left: 0px;
   background-color: black;
   color: white;
   padding-left: 40px;
   flex-direction: row;
-  text-align: left;
+  text-align: center;
+ }
+
+.opacity-card {
+  background-image: linear-gradient(to bottom right,  #121212, #373737bd);
+  border-radius: 15px;
 }
+
 .card-img-top {
+  border-radius: 15px;
   margin: 20px;
-  width: 35%;
-  height: 35%;
+  width: 30%;
+  height: 30%;
   }
+
 .card-title {
   font-size:50px;
+  margin-left: 20px;
  }
-.video-here {
-  background-color: aqua;
+
+ .card-text {
+  margin-left: 20px;
+ }
+
+ 
+ .card-description {
+ margin-left: 20px;
 }
+
+
+
 #soundtrack-container {
   margin: 20px;
+  background-image: linear-gradient(to bottom right, #373737bd, #262424);
+  border-radius: 20px;
 }
+
 #soundtrack-img {
-  width: 40%;
+  display: inline;
+  margin-top: 20px;
+  width: 20%;
+  border-radius: 20px;
 }
+
 .btn-soundtrack {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   background-color: #000000;
+  border-radius: 15px;
+  font-size: 20px;
+  
 }
+
+.btn-soundtrack:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+  }
+
+  .thumbnail {
+    color: #FFF;
+  }
+

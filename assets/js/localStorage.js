@@ -6,9 +6,6 @@ $("#search-button-new").on("click", function (event) {
 }
 
 
-function storeMovie(movieTitle) {
-
-var storedMovies = localStorage.getItem("movies");
 
 
 
