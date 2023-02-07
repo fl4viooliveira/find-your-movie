@@ -11,7 +11,7 @@ function soundTrack(inp) {
     movieURLInput +
     "&limit=5";
   var footer = $("#footer-info");
-  footer.attr("class", "card-footer d-flex flex-wrap");
+  footer.attr("class", "card-footer d-flex justify-content-evenly flex-wrap");
 
   var sondTrack = $(
     '<span class="badge rounded-pill text-bg-info my-3">Movie Sound Tracks</span>'
@@ -27,7 +27,7 @@ function soundTrack(inp) {
 
     for (let i = 0; i < 5; i++) {
       var thisArray = array.results[i];
-      var card = $("<div>");
+      var card = $('<div>');
       console.log(thisArray);
 
       // Get the album cover
@@ -36,12 +36,12 @@ function soundTrack(inp) {
 
       // Get the Album name
       var albumName = thisArray.collectionCensoredName;
-      var albumTitle = $('<p class="album-name">').text(albumName);
+      var albumTitle = $('<p class="album-name text-wrap" style="width:150px;">').text(albumName);
 
       // Get the link to the album
       var albumURL = thisArray.collectionViewUrl;
 
-      var anchor = $(`<a href=${albumURL} target="_blank">`);
+      var anchor = $(`<a href=${albumURL} class="list-group-item text-white" target="_blank">`);
       anchor.append(albumIcon, albumTitle);
 
       // $("#music-input").append(card.append(albumTitle, albumIcon, artistName, numOfTracks, linkToAlbum))
@@ -55,7 +55,7 @@ function soundTrack(inp) {
 // YOUTUBE API BLOCK --------------------------------------
 function trailerCall(inp) {
   $.ajax({
-    url: `${YOUTUBE_URL}5&q=${inp}&key=${YOUTUBE_KEY_3}`,
+    url: `${YOUTUBE_URL}5&q=${inp}&key=${YOUTUBE_KEY_2}`,
     method: "GET",
   }).then(function (response) {
     console.log(response);
@@ -63,7 +63,7 @@ function trailerCall(inp) {
     // <iframe width="560" height="315"
     var iframe = $(`
       <iframe 
-      class="video"
+      class="ratio ratio-16x9"
       src="https://www.youtube.com/embed/${videoId}" 
       title="YouTube video player" 
       frameborder="0" 
@@ -79,7 +79,7 @@ function trailerCall(inp) {
       `);
 
     var trailerPill = $(
-      '<span class="badge rounded-pill text-bg-info my-3">Watch the Trailer</span>'
+      '<span class="badge rounded-pill text-bg-info mb-5">Watch the Trailer</span>'
     );
     $("#trailer-column").prepend(trailerPill);
     $("#trailer").append(iframe);
@@ -89,9 +89,9 @@ function trailerCall(inp) {
 
 // OMBd API BLOCK ------------------------------------------
 function movieSearch(inp) {
-  var newSearchBlock = $('<div class="container-fluid bg-black">');
+  var newSearchBlock = $('<div class="container d-flex justify-content-center bg-black">');
   var newSearchBtn = $(
-    '<button id="new-search" class="btn btn-outline-info p-0 my-2">New Search</button>'
+    '<button id="new-search" class="btn btn-outline-info px-5 my-3">New Search</button>'
   );
   newSearchBlock.append(newSearchBtn);
   $("#movie-info").prepend(newSearchBlock);
@@ -162,5 +162,5 @@ inputBtn.on("click", function (event) {
   $(".jumbotron").attr("style", "display: none !important;");
   movieSearch(movie);
 });
-// movieSearch("Harry Potter");
+movieSearch("Harry Potter");
 // SEARCH BUTTON BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
