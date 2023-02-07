@@ -102,6 +102,9 @@ function movieSearch(inp) {
     success: function (movieInfo) {
       console.log(movieInfo);
 
+      localStorage.setItem(movieInfo.Title, movieInfo.Poster);
+      readSearchedMovies();
+      
       // Movie Poster
       var imgAnchor = $("#img-anchor");
       var imgMovie = $(
