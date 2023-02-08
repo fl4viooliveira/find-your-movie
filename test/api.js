@@ -232,3 +232,23 @@ inputBtn.on("click", function(event) {
 // movieSearch("Harry Potter");
 // SEARCH BUTTON BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+var carouselAnchor = $("#carousel-anchor");
+
+function carousel(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (i === 0) {
+      var carouselItem = $(`<div class="carousel-item active">`);
+      var img = $(`<img src=${arr[i][1]} class="d-block mx-auto" alt=${arr[i][0]}>`)
+      carouselAnchor.prepend(carouselItem);
+      carouselItem.append(img)
+    }else{
+      var carouselItem = $(`<div class="carousel-item">`);
+      var img = $(`<img src=${arr[i][1]} class="d-block mx-auto" alt=${arr[i][0]}>`)
+      carouselAnchor.prepend(carouselItem);
+      carouselItem.append(img)
+    }
+  }
+}
+if (local.length > 0) {
+  carousel(local);
+}
