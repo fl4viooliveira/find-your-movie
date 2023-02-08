@@ -216,10 +216,7 @@ function movieSearch(inp) {
 }
 // OMBd API BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-// CAROUSEL -------------------------------------------------
-// var history = [];
 
-// CAROUSEL ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 // SEARCH BUTTON BLOCK --------------------------------------
 inputBtn.on("click", function(event) {
@@ -232,18 +229,19 @@ inputBtn.on("click", function(event) {
 // movieSearch("Harry Potter");
 // SEARCH BUTTON BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+// CAROUSEL -------------------------------------------------
 var carouselAnchor = $("#carousel-anchor");
 
 function carousel(arr) {
   for (var i = 0; i < arr.length; i++) {
     if (i === 0) {
       var carouselItem = $(`<div class="carousel-item active">`);
-      var img = $(`<img src=${arr[i][1]} class="d-block mx-auto" alt=${arr[i][0]}>`)
+      var img = $(`<img src=${arr[i][1]} class="d-block mx-auto movImg" role="button" alt="${arr[i][0]}">`)
       carouselAnchor.prepend(carouselItem);
       carouselItem.append(img)
     }else{
       var carouselItem = $(`<div class="carousel-item">`);
-      var img = $(`<img src=${arr[i][1]} class="d-block mx-auto" alt=${arr[i][0]}>`)
+      var img = $(`<img src=${arr[i][1]} class="d-block mx-auto movImg" role="button" alt="${arr[i][0]}">`)
       carouselAnchor.prepend(carouselItem);
       carouselItem.append(img)
     }
@@ -252,3 +250,12 @@ function carousel(arr) {
 if (local.length > 0) {
   carousel(local);
 }
+
+$('.movImg').on('click', function(event){
+  event.preventDefault();
+  var alt = $(this).attr('alt')
+  console.log(alt)
+  $(".jumbotron").attr("style", "display: none !important;");
+  movieSearch(alt);
+})
+// CAROUSEL ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
