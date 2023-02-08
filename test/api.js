@@ -98,7 +98,7 @@ function movieSearch(inp) {
   $("#movie-info").prepend(newSearchBlock);
 
   $.ajax({
-    url: `https://www.omdbapi.com/?t=${inp}&apikey=556cb440`,
+    url: `https://www.omdbapi.com/?t=${inp}&apikey=${OMDB_KEY}`,
     method: "GET",
     success: function (movieInfo) {
       console.log(movieInfo);
