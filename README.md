@@ -68,7 +68,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Find your movie][product-screenshot]](https://fl4viooliveira.github.io/find-your-movie/)
+[![Find your movie][product-screenshot]](./Images/home.png/)
 
 
 
