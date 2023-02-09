@@ -81,7 +81,7 @@
 
 ### Description
 
-A website application that provides information about movies based on user input. The application uses three different APIs:
+A website application that provides information about movies based on user input, including a trailer, and the top ITunes albums for that movie. The application uses three different APIs:
 
   <ol>
     <li>
@@ -95,18 +95,29 @@ A website application that provides information about movies based on user input
 
 ## Getting Started
 
-## How to use
+## Usage
   <ul>  
     <li>
-    Clone or download the repository to your local machine.</li>
+    The opening page will display a simple search bar for the user to input the movie they want to search. 
+	<img src="./Images/home.png"></li>
     <li>
-    Open the index.html file in your browser
+    Once the user searches for a movie the page will display:
+	   <ul>
+		<il> the information for that movie
+		<img src="./Images/PosterInformation.png"></li>
+		<li> the trailer
+		<img src="./Images/YoutubeTrailer.png"></li>
+		<li> the top 5 albums from ITunes 
+	    	<img src="./Images/ITunesPlaylist.png.png"><li>
+	    </ul>
+	</li>
     <li>
-    Enter the movie title you are interested in.</li>
-    <li>
-    Click on the "Search" button.</li>
-    <li>
-    The application will retrieve information, trailer and soundtrack of the movie from the APIs and display it on the main page.</li>
+    Once the user clickes the "new search" button, the webpage will disply the past searched movies in the carosel below the search bar
+	<img src="./Images/history.jpg"></li>
+	<li>With each new search, the past movie information will be removed and the new movie information shown. The past movie will then be added to the past movies carosel.</li>
+    <li> If the user inputs a string which does not correspond with a movie, then the below warning will appear. 
+	<img src="./Images/Warning.png">
+	</li>
   </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
