@@ -68,7 +68,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img src="./Images/home.png style="margin-top: 20px; margin-bottom:30px">
+<img src="./Images/home.png" style="margin-top: 20px; margin-bottom:30px">
 
 
 
