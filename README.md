@@ -92,6 +92,7 @@ A website application that provides information about movies based on user input
     iTunes API for delivering movie soundtracks.</li>
   </ol>
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 ## How to use
