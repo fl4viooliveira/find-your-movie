@@ -1,9 +1,0 @@
-.hero{
-  background-image: url("../Images/Cinema.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-.trailer{
-  aspect-ratio: 16 / 9;
-  width: 100%;
-}
