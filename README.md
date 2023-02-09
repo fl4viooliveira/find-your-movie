@@ -99,7 +99,7 @@ A website application that provides information about movies based on user input
   <ul>  
     <li>
     The opening page will display a simple search bar for the user to input the movie they want to search. 
-	<img src="./Images/home.png"></li>
+	<img src="./Images/noPastSearches.png"></li>
     <li>
     Once the user searches for a movie the page will display:
 	   <ul>
