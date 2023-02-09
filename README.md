@@ -108,7 +108,7 @@ A website application that provides information about movies based on user input
 		<li> the trailer
 		<img src="./Images/YoutubeTrailer.png"></li>
 		<li> the top 5 albums from ITunes 
-	    	<img src="./Images/ITunesPlaylist.png"><li>
+	    	<img src="./Images/ITunesPlaylist.png"></li>
 	    </ul>
 	</li>
     <li>
