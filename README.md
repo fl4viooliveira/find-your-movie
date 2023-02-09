@@ -1,4 +1,4 @@
-# movie-app
+# Find your movie!
 
 <!-- PROJECT SHIELDS -->
 <!--
