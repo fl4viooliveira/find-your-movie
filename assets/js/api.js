@@ -100,7 +100,8 @@ var movieHistory = [];
  *The last step is clear the localStorage to not duplicate,
  *when send the array back to localStorage
  */
-function storage() {  if (localStorage.listOfMovies) {
+function storage() {
+  if (localStorage.listOfMovies) {
     var storage = JSON.parse(localStorage.getItem("listOfMovies"));
     for (var i = 0; i < storage.length; i++) {
       movieHistory.push(storage[i]);
@@ -191,7 +192,7 @@ function movieSearch(inp) {
         // storeMovies(cleanList);
       } else {
         $("#header-info").append(
-          "<h2 class='text-white'>Sorry! We didn't find your movie, please try again.</h2> "
+          "<h2 class='text-white text-center mx-auto'>Sorry! We didn't find your movie, please try again.</h2> "
         );
         console.log("Failed");
       }
@@ -204,8 +205,6 @@ function movieSearch(inp) {
    * Set: A value in the Set may only occur once; it is unique in the Set's collection
    * Array.from: method creates a new array from an array-like structure
    */
-  // var cleanList = Array.from(new Set(movieHistory));
-  // storeMovies(cleanList);
 
   // NEW SEARCH BUTTON BLOCK --------------------------------------
   $("#new-search").on("click", function() {
@@ -244,7 +243,7 @@ function carousel(arr) {
       var img = $(`<img src=${arr[i][1]} class="d-block mx-auto movImg" role="button" alt="${arr[i][0]}">`)
       carouselAnchor.prepend(carouselItem);
       carouselItem.append(img)
-    }else{
+    } else {
       var carouselItem = $(`<div class="carousel-item">`);
       var img = $(`<img src=${arr[i][1]} class="d-block mx-auto movImg" role="button" alt="${arr[i][0]}">`)
       carouselAnchor.prepend(carouselItem);
@@ -252,14 +251,19 @@ function carousel(arr) {
     }
   }
 }
+
 if (local.length > 0) {
-  carousel(local);
+  /*
+   * Set: A value in the Set may only occur once; it is unique in the Set's collection
+   * Array.from: method creates a new array from an array-like structure
+   */
+  var arrCleaned = Array.from(new Set(local.map(JSON.stringify)), JSON.parse)
+  carousel(arrCleaned);
   btnPrev.prepend(spanPrev)
   btnNext.prepend(spanNext)
-
 }
 
-$('.movImg').on('click', function(event){
+$('.movImg').on('click', function(event) {
   event.preventDefault();
   var alt = $(this).attr('alt')
   console.log(alt)
