@@ -119,6 +119,8 @@ A website application that provides information about movies based on user input
 	<img src="./Images/Warning.png" style="margins: 50px">
 	</li>
   </ul>
+  
+Deployed site: https://fl4viooliveira.github.io/find-your-movie/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
