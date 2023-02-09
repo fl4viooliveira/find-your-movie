@@ -2,6 +2,9 @@
   background-image: url("../../Images/Cinema.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
 }
 .trailer{
   aspect-ratio: 16 / 9;
