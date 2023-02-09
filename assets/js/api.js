@@ -231,6 +231,12 @@ inputBtn.on("click", function(event) {
 // CAROUSEL -------------------------------------------------
 var carouselAnchor = $("#carousel-anchor");
 
+var btnPrev = $('.prev')
+var btnNext = $('.next')
+
+var spanPrev = $('<span class="carousel-control-prev-icon" aria-hidden="true">')
+var spanNext = $('<span class="carousel-control-next-icon" aria-hidden="true">')
+
 function carousel(arr) {
   for (var i = 0; i < arr.length; i++) {
     if (i === 0) {
@@ -248,6 +254,9 @@ function carousel(arr) {
 }
 if (local.length > 0) {
   carousel(local);
+  btnPrev.prepend(spanPrev)
+  btnNext.prepend(spanNext)
+
 }
 
 $('.movImg').on('click', function(event){
