@@ -68,8 +68,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Find your movie][product-screenshot]](./Images/home.png/)
-
+<img src="./Images/home.png">
 
 
 
