@@ -167,7 +167,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 Links to contributors GitHub repository:
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 https://github.com/fl4viooliveira
 https://github.com/Moobell1212
 https://github.com/francostroff
@@ -176,6 +176,7 @@ https://github.com/Mister-Stan
 
 Project GitHub Link: https://github.com/fl4viooliveira/find-your-movie
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
