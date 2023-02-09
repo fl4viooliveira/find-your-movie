@@ -116,7 +116,7 @@ A website application that provides information about movies based on user input
 	<img src="./Images/history.jpg" style="margin-top: 20px; margin-bottom:30px"></li>
 	<li>With each new search, the past movie information will be removed and the new movie information shown. The past movie will then be added to the past movies carousel.</li>
     <li> If the user inputs a string which does not correspond with a movie, then the below warning will appear. 
-	<img src="./Images/Warning.png" style="margin-top: 50px; margin-bottom:50px">
+	<img src="./Images/Warning.png" style="margins: 50px">
 	</li>
   </ul>
 
