@@ -60,7 +60,7 @@ function soundTrack(inp) {
 // YOUTUBE API BLOCK --------------------------------------
 function trailerCall(inp) {
   $.ajax({
-    url: `${YOUTUBE_URL}5&q=${inp}&key=${YOUTUBE_KEY}`,
+    url: `${YOUTUBE_URL}5&q=${inp}&key=${YOUTUBE_KEY_2}`,
     method: "GET",
   }).then(function(response) {
     console.log(response);
