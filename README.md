@@ -103,18 +103,18 @@ A website application that provides information about movies based on user input
     <li>
     Once the user searches for a movie the page will display:
 	   <ul>
-		<li> the information for that movie
+		<li> The information for that movie
 		<img src="./Images/PosterInformation.png" style="margin-top: 20px; margin-bottom:30px"></li>
-		<li> the trailer
+		<li> The trailer
 		<img src="./Images/YoutubeTrailer.png" style="margin-top: 20px; margin-bottom:30px"></li>
-		<li> the top 5 albums from ITunes 
+		<li> The top 5 albums from ITunes 
 	    	<img src="./Images/ITunesPlaylist.png" style="margin-top: 20px; margin-bottom:30px"></li>
 	    </ul>
 	</li>
     <li>
-    Once the user clickes the "new search" button, the webpage will disply the past searched movies in the carousel below the search bar
+    Once the user clickes the "new search" button, the webpage will disply the past searched movies in the carousel below the search bar.
 	<img src="./Images/history.jpg" style="margin-top: 20px; margin-bottom:30px"></li>
-	<li>With each new search, the past movie information will be removed and the new movie information shown. The past movie will then be added to the past movies carousel.</li>
+	<li>With each new search, the past movie information will be removed and the new movie information shown. The last movie will be added to the past movies carousel.</li>
     <li> If the user inputs a string which does not correspond with a movie, then the below warning will appear. 
 	<img src="./Images/Warning.png" style="margins: 50px">
 	</li>
@@ -137,7 +137,7 @@ _To install, on the terminal type:_
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have any suggestions to improove this website, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
