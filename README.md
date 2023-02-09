@@ -20,7 +20,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/fl4viooliveira/find-your-movie">
-	<img src="images/find-your-movie-logo.png">
+	<img src="images/homepage.png">
   </a>
 
   <p align="center">
