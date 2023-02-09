@@ -103,12 +103,12 @@ A website application that provides information about movies based on user input
     <li>
     Once the user searches for a movie the page will display:
 	   <ul>
-		<il> the information for that movie
+		<li> the information for that movie
 		<img src="./Images/PosterInformation.png"></li>
 		<li> the trailer
 		<img src="./Images/YoutubeTrailer.png"></li>
 		<li> the top 5 albums from ITunes 
-	    	<img src="./Images/ITunesPlaylist.png.png"><li>
+	    	<img src="./Images/ITunesPlaylist.png"><li>
 	    </ul>
 	</li>
     <li>
